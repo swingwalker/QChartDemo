@@ -1,2 +1,7 @@
-﻿  MainWindow.cpp
-  MainWindow.vcxproj -> E:\heyu\QChartDemo\src\MainWindow\..\..\bin\MainWindowd.exe
+﻿  Moc'ing MainWindow.h...
+  moc_MainWindow.cpp
+  main.cpp
+  MainWindow.cpp
+  正在生成代码...
+  qrc_MainWindow.cpp
+  MainWindow.vcxproj -> E:\project\QChartDemo\src\MainWindow\..\..\bin\MainWindowd.exe
