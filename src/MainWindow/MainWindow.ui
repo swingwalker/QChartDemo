@@ -1,0 +1,2170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1201</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,1">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="toolTipDuration">
+         <number>-1</number>
+        </property>
+        <property name="statusTip">
+         <string>设置</string>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="tabPosition">
+         <enum>QTabWidget::North</enum>
+        </property>
+        <property name="tabShape">
+         <enum>QTabWidget::Rounded</enum>
+        </property>
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <property name="elideMode">
+         <enum>Qt::ElideLeft</enum>
+        </property>
+        <property name="movable">
+         <bool>true</bool>
+        </property>
+        <property name="tabBarAutoHide">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="tab">
+         <property name="statusTip">
+          <string>动画设置</string>
+         </property>
+         <attribute name="title">
+          <string>Animation</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>setAnimationOptions</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QComboBox" name="comboBox_2">
+            <item>
+             <property name="text">
+              <string>NoAnimation</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>GridAxisAnimation</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>SeriesAnimation</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>AllAnimation</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_TimeSpan_2"/>
+          </item>
+          <item row="4" column="0" colspan="2">
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>setAnimationDuration</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>setAnimationEasingCurve</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="2">
+           <widget class="QTextBrowser" name="textBrowser"/>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboBox_3">
+            <item>
+             <property name="text">
+              <string>InElastic</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>OutElastic</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>InOutElastic</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>OutInElastic</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>InBack</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>OutBack</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>InOutBack</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>OutInBack</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>InBounce</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>OutBounce</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>InOutBounce</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>OutInBounce</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <property name="statusTip">
+          <string>背景设置</string>
+         </property>
+         <attribute name="title">
+          <string>Background</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="3" column="2">
+           <widget class="QLineEdit" name="lineEdit_5"/>
+          </item>
+          <item row="3" column="6">
+           <widget class="QLineEdit" name="lineEdit_3"/>
+          </item>
+          <item row="3" column="8">
+           <widget class="QLineEdit" name="lineEdit_2"/>
+          </item>
+          <item row="3" column="3">
+           <widget class="QLabel" name="label_12">
+            <property name="text">
+             <string>T</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>setMargins</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string>L</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="5">
+           <widget class="QLabel" name="label_13">
+            <property name="text">
+             <string>R</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="4">
+           <widget class="QLineEdit" name="lineEdit_4"/>
+          </item>
+          <item row="5" column="0" colspan="9">
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>471</width>
+              <height>144</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="4" column="0" colspan="9">
+           <widget class="QTextBrowser" name="textBrowser_2"/>
+          </item>
+          <item row="3" column="7">
+           <widget class="QLabel" name="label_14">
+            <property name="text">
+             <string>B</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>setDropShadowEnabled</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>setBackgroundVisible</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>setBackgroundRoundness</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="8">
+           <widget class="QLineEdit" name="lineEdit"/>
+          </item>
+          <item row="1" column="1" colspan="8">
+           <widget class="QComboBox" name="comboBox_4">
+            <item>
+             <property name="text">
+              <string>true</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>false</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="8">
+           <widget class="QComboBox" name="comboBox_6">
+            <item>
+             <property name="text">
+              <string>true</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>false</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <property name="statusTip">
+          <string>图表设置</string>
+         </property>
+         <attribute name="title">
+          <string>Chat</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_33">
+              <property name="text">
+               <string>Charts</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="comboBox_18">
+              <item>
+               <property name="text">
+                <string>ChartTypeUndefined</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ChartTypeCartesian</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ChartTypePolar</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="label_22">
+              <property name="text">
+               <string>setTitle</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QLineEdit" name="lineEdit_10"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>setChatType</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="comboBox_5">
+              <item>
+               <property name="text">
+                <string>ChartTypeUndefined</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ChartTypeCartesian</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ChartTypePolar</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="2" colspan="2">
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QPushButton" name="pushButton_Start_10">
+                <property name="text">
+                 <string>+</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_Start_11">
+                <property name="text">
+                 <string>-</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTabWidget" name="tabWidget_2">
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <widget class="QWidget" name="tab_6">
+             <attribute name="title">
+              <string>Axis</string>
+             </attribute>
+             <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,1">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,1">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_4">
+                  <item>
+                   <widget class="QLabel" name="label_23">
+                    <property name="text">
+                     <string>Axis</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_24">
+                    <property name="text">
+                     <string>Alignment</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_57">
+                    <property name="text">
+                     <string>Orientation</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_25">
+                    <property name="text">
+                     <string>setLinePenColor</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_26">
+                    <property name="text">
+                     <string>setGridLineColor</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_27">
+                    <property name="text">
+                     <string>setGridLineVisible</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_28">
+                    <property name="text">
+                     <string>setLabelsAngle</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_29">
+                    <property name="text">
+                     <string>setLabelsColor</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_30">
+                    <property name="text">
+                     <string>setLabelsFont</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_31">
+                    <property name="text">
+                     <string>setLabelsVisible</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_32">
+                    <property name="text">
+                     <string>setLineVisible</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_43">
+                    <property name="text">
+                     <string>setMinorGridLineColor</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_44">
+                    <property name="text">
+                     <string>setMinorGridLineVisible</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QGridLayout" name="gridLayout_5">
+                  <item row="3" column="0">
+                   <widget class="QLineEdit" name="lineEdit_11"/>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QPushButton" name="pushButton">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>23</width>
+                      <height>23</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>23</width>
+                      <height>23</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLineEdit" name="lineEdit_12"/>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QPushButton" name="pushButton_2">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>23</width>
+                      <height>23</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>23</width>
+                      <height>23</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="0">
+                   <widget class="QLineEdit" name="lineEdit_14"/>
+                  </item>
+                  <item row="7" column="1">
+                   <widget class="QPushButton" name="pushButton_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>23</width>
+                      <height>23</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>23</width>
+                      <height>23</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLineEdit" name="lineEdit_15"/>
+                  </item>
+                  <item row="8" column="1">
+                   <widget class="QPushButton" name="pushButton_5">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>23</width>
+                      <height>23</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>23</width>
+                      <height>23</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="11" column="0">
+                   <widget class="QLineEdit" name="lineEdit_21"/>
+                  </item>
+                  <item row="11" column="1">
+                   <widget class="QPushButton" name="pushButton_9">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>23</width>
+                      <height>23</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>23</width>
+                      <height>23</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0" colspan="2">
+                   <widget class="QComboBox" name="comboBox_9"/>
+                  </item>
+                  <item row="1" column="0" colspan="2">
+                   <widget class="QComboBox" name="comboBox_10">
+                    <item>
+                     <property name="text">
+                      <string>AlignLeft</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>AlignRight</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>AlignBottom</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>AlignTop</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="2" column="0" colspan="2">
+                   <widget class="QComboBox" name="comboBox_26">
+                    <item>
+                     <property name="text">
+                      <string>Horizontal</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Vertical</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="5" column="0" colspan="2">
+                   <widget class="QComboBox" name="comboBox_11">
+                    <item>
+                     <property name="text">
+                      <string>true</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>false</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="6" column="0" colspan="2">
+                   <widget class="QLineEdit" name="lineEdit_13"/>
+                  </item>
+                  <item row="9" column="0" colspan="2">
+                   <widget class="QComboBox" name="comboBox_12">
+                    <item>
+                     <property name="text">
+                      <string>true</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>false</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="10" column="0" colspan="2">
+                   <widget class="QComboBox" name="comboBox_13">
+                    <item>
+                     <property name="text">
+                      <string>true</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>false</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="12" column="0" colspan="2">
+                   <widget class="QComboBox" name="comboBox_19">
+                    <item>
+                     <property name="text">
+                      <string>true</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>false</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,1">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_2">
+                    <item>
+                     <widget class="QLabel" name="label_58">
+                      <property name="text">
+                       <string>setReverse</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_59">
+                      <property name="text">
+                       <string>setShadesBorderColor</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_60">
+                      <property name="text">
+                       <string>setShadesColor</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_61">
+                      <property name="text">
+                       <string>setShadeVisible</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_62">
+                      <property name="text">
+                       <string>setTitleFont</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_63">
+                      <property name="text">
+                       <string>setTitleText</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_64">
+                      <property name="text">
+                       <string>setTitleVisible</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_65">
+                      <property name="text">
+                       <string>setVisible</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_66">
+                      <property name="text">
+                       <string>setMax</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_67">
+                      <property name="text">
+                       <string>setMin</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_71">
+                      <property name="text">
+                       <string>自动计算上下限</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_68">
+                      <property name="text">
+                       <string>超出比例</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_8">
+                    <item row="1" column="0">
+                     <widget class="QLineEdit" name="lineEdit_28"/>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QPushButton" name="pushButton_15">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>23</width>
+                        <height>23</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>23</width>
+                        <height>23</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>PushButton</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLineEdit" name="lineEdit_29"/>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QPushButton" name="pushButton_16">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>23</width>
+                        <height>23</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>23</width>
+                        <height>23</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>PushButton</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QLineEdit" name="lineEdit_30"/>
+                    </item>
+                    <item row="13" column="0">
+                     <widget class="QLineEdit" name="lineEdit_34"/>
+                    </item>
+                    <item row="13" column="1">
+                     <widget class="QLabel" name="label_69">
+                      <property name="text">
+                       <string>%</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="2">
+                     <widget class="QComboBox" name="comboBox_27">
+                      <item>
+                       <property name="text">
+                        <string>true</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>false</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="3" column="0" colspan="2">
+                     <widget class="QComboBox" name="comboBox_28">
+                      <item>
+                       <property name="text">
+                        <string>true</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>false</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="8" column="0" colspan="2">
+                     <widget class="QComboBox" name="comboBox_29">
+                      <item>
+                       <property name="text">
+                        <string>true</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>false</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="9" column="0" colspan="2">
+                     <widget class="QComboBox" name="comboBox_30">
+                      <item>
+                       <property name="text">
+                        <string>true</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>false</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="10" column="0" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_32"/>
+                    </item>
+                    <item row="11" column="0" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_33"/>
+                    </item>
+                    <item row="12" column="0" colspan="2">
+                     <widget class="QComboBox" name="comboBox_31">
+                      <item>
+                       <property name="text">
+                        <string>true</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>false</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="4" column="1">
+                     <widget class="QPushButton" name="pushButton_17">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>23</width>
+                        <height>23</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>23</width>
+                        <height>23</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>PushButton</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_31"/>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <widget class="QPushButton" name="pushButton_Start_2">
+                    <property name="text">
+                     <string>+</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_Start_3">
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_7">
+             <attribute name="title">
+              <string>Series</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="8" column="0">
+               <widget class="QLabel" name="label_37">
+                <property name="text">
+                 <string>setPointLabelsColor</string>
+                </property>
+               </widget>
+              </item>
+              <item row="15" column="1">
+               <widget class="QComboBox" name="comboBox_21"/>
+              </item>
+              <item row="9" column="1" rowspan="2">
+               <widget class="QLineEdit" name="lineEdit_18"/>
+              </item>
+              <item row="8" column="4" rowspan="2">
+               <widget class="QPushButton" name="pushButton_Start_7">
+                <property name="text">
+                 <string>-</string>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="1" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_19"/>
+              </item>
+              <item row="4" column="1">
+               <widget class="QComboBox" name="comboBox_20">
+                <item>
+                 <property name="text">
+                  <string>true</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>false</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="10" column="3" rowspan="2">
+               <widget class="QPushButton" name="pushButton_Start_4">
+                <property name="text">
+                 <string>清空</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_49">
+                <property name="text">
+                 <string>opacity</string>
+                </property>
+               </widget>
+              </item>
+              <item row="15" column="2">
+               <widget class="QPushButton" name="pushButton_Start_8">
+                <property name="text">
+                 <string>detach</string>
+                </property>
+               </widget>
+              </item>
+              <item row="12" column="0">
+               <widget class="QLabel" name="label_40">
+                <property name="text">
+                 <string>setPointLabelsVisible</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1" colspan="2">
+               <widget class="QComboBox" name="comboBox"/>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Series</string>
+                </property>
+               </widget>
+              </item>
+              <item row="15" column="0">
+               <widget class="QLabel" name="label_46">
+                <property name="text">
+                 <string>attachedAxis</string>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="0" rowspan="2">
+               <widget class="QLabel" name="label_38">
+                <property name="text">
+                 <string>setPointLabelsFont</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="2">
+               <widget class="QPushButton" name="pushButton_3">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>23</width>
+                  <height>23</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>23</width>
+                  <height>23</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>PushButton</string>
+                </property>
+               </widget>
+              </item>
+              <item row="12" column="1" colspan="2">
+               <widget class="QComboBox" name="comboBox_16">
+                <item>
+                 <property name="text">
+                  <string>true</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>false</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="9" column="2" rowspan="2">
+               <widget class="QPushButton" name="pushButton_7">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>23</width>
+                  <height>23</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>23</width>
+                  <height>23</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>PushButton</string>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="4" rowspan="2">
+               <widget class="QPushButton" name="pushButton_Start_5">
+                <property name="text">
+                 <string>清空所有</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="1">
+               <widget class="QLineEdit" name="lineEdit_17"/>
+              </item>
+              <item row="8" column="2">
+               <widget class="QPushButton" name="pushButton_6">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>23</width>
+                  <height>23</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>23</width>
+                  <height>23</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>PushButton</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="1" colspan="2">
+               <widget class="QComboBox" name="comboBox_15">
+                <item>
+                 <property name="text">
+                  <string>true</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>false</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="5" column="1" colspan="2">
+               <widget class="QComboBox" name="comboBox_14">
+                <item>
+                 <property name="text">
+                  <string>XYSeries</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>LineSeries</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>SplineSeries</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>ScatterSeries</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>AreaSeries</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>AbstractBarSeries</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>BarSeries</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>StackedBarSeries</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>PercentBarSeries</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>HorizontalBar</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>HorizontalStacked</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>HorizontalPercentBar</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>PieSeries</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="lineEdit_23"/>
+              </item>
+              <item row="14" column="1">
+               <widget class="QLineEdit" name="lineEdit_20"/>
+              </item>
+              <item row="13" column="1" colspan="2">
+               <widget class="QComboBox" name="comboBox_17">
+                <item>
+                 <property name="text">
+                  <string>true</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>false</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="6" column="1">
+               <widget class="QLineEdit" name="lineEdit_16"/>
+              </item>
+              <item row="13" column="0">
+               <widget class="QLabel" name="label_41">
+                <property name="text">
+                 <string>setPointsVisible</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="0">
+               <widget class="QLabel" name="label_36">
+                <property name="text">
+                 <string>setPointLabelsClipping</string>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="0">
+               <widget class="QLabel" name="label_39">
+                <property name="text">
+                 <string>setPointLabelsFormat</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0">
+               <widget class="QLabel" name="label_35">
+                <property name="text">
+                 <string>setColor</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="label_34">
+                <property name="text">
+                 <string>type</string>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="0">
+               <widget class="QLabel" name="label_42">
+                <property name="text">
+                 <string>pointCount</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="3" rowspan="2">
+               <widget class="QPushButton" name="pushButton_Start_6">
+                <property name="text">
+                 <string>+</string>
+                </property>
+               </widget>
+              </item>
+              <item row="16" column="1">
+               <widget class="QComboBox" name="comboBox_22"/>
+              </item>
+              <item row="16" column="0">
+               <widget class="QLabel" name="label_47">
+                <property name="text">
+                 <string>detachedAxis</string>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="2">
+               <widget class="QPushButton" name="pushButton_8">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>23</width>
+                  <height>23</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>23</width>
+                  <height>23</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>PushButton</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_45">
+                <property name="text">
+                 <string>name</string>
+                </property>
+               </widget>
+              </item>
+              <item row="16" column="2">
+               <widget class="QPushButton" name="pushButton_Start_9">
+                <property name="text">
+                 <string>attach</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="lineEdit_22"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_48">
+                <property name="text">
+                 <string>setUseOpenGl</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_50">
+                <property name="text">
+                 <string>visible</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QComboBox" name="comboBox_23">
+                <item>
+                 <property name="text">
+                  <string>true</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>false</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="0" column="3" rowspan="3" colspan="2">
+               <widget class="QGroupBox" name="groupBox">
+                <property name="title">
+                 <string>ScatterSeries</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <property name="statusTip">
+          <string>绘图区域设置</string>
+         </property>
+         <attribute name="title">
+          <string>PlotArea</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_16">
+            <property name="text">
+             <string>X</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="8">
+           <widget class="QLineEdit" name="lineEdit_9"/>
+          </item>
+          <item row="0" column="6">
+           <widget class="QLineEdit" name="lineEdit_8"/>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLabel" name="label_17">
+            <property name="text">
+             <string>Y</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="7">
+           <widget class="QLabel" name="label_19">
+            <property name="text">
+             <string>W</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLineEdit" name="lineEdit_6"/>
+          </item>
+          <item row="0" column="4">
+           <widget class="QLineEdit" name="lineEdit_7"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_20">
+            <property name="text">
+             <string>plotAreaBackgroundVisible</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <widget class="QLabel" name="label_18">
+            <property name="text">
+             <string>H</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="9">
+           <spacer name="verticalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_15">
+            <property name="text">
+             <string>plotArea</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" colspan="8">
+           <widget class="QComboBox" name="comboBox_7">
+            <item>
+             <property name="text">
+              <string>true</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>false</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_21">
+            <property name="text">
+             <string>setTheme</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="8">
+           <widget class="QComboBox" name="comboBox_8">
+            <item>
+             <property name="text">
+              <string>ChartThemeLight</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ChartThemeBlueCerulean</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ChartThemeDark</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ChartThemeBrownSand</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ChartThemeBlueNcs</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ChartThemeHighContrast</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ChartThemeBlueIcy</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ChartThemeQt</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>模拟数据间隔(ms)：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_TimeSpan"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_Start">
+          <property name="text">
+           <string>开始</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 0);</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionsetAnimationDuration">
+   <property name="text">
+    <string>setAnimationDuration</string>
+   </property>
+   <property name="toolTip">
+    <string>setAnimationDuration</string>
+   </property>
+   <property name="statusTip">
+    <string>设置动画从开始到结束的时间</string>
+   </property>
+  </action>
+  <action name="actionNoAnimation">
+   <property name="text">
+    <string>NoAnimation</string>
+   </property>
+  </action>
+  <action name="actionGridAxisAnimation">
+   <property name="text">
+    <string>GridAxisAnimation</string>
+   </property>
+  </action>
+  <action name="actionSeriesAnimation">
+   <property name="text">
+    <string>SeriesAnimation</string>
+   </property>
+  </action>
+  <action name="actionLinear">
+   <property name="text">
+    <string>Linear</string>
+   </property>
+  </action>
+  <action name="actionOutQuad">
+   <property name="text">
+    <string>OutQuad</string>
+   </property>
+  </action>
+  <action name="actionInOutQuad">
+   <property name="text">
+    <string>InOutQuad</string>
+   </property>
+  </action>
+  <action name="actionOutInQuad">
+   <property name="text">
+    <string>OutInQuad</string>
+   </property>
+  </action>
+  <action name="actionOutCubic">
+   <property name="text">
+    <string>OutCubic</string>
+   </property>
+  </action>
+  <action name="actionInOutCubic">
+   <property name="text">
+    <string>InOutCubic</string>
+   </property>
+  </action>
+  <action name="actionOutInCubic">
+   <property name="text">
+    <string>OutInCubic</string>
+   </property>
+  </action>
+  <action name="actionOutQuart">
+   <property name="text">
+    <string>OutQuart</string>
+   </property>
+  </action>
+  <action name="actionInOutQuart">
+   <property name="text">
+    <string>InOutQuart</string>
+   </property>
+  </action>
+  <action name="actionOutInQuart">
+   <property name="text">
+    <string>OutInQuart</string>
+   </property>
+  </action>
+  <action name="actionOutQuint">
+   <property name="text">
+    <string>OutQuint</string>
+   </property>
+  </action>
+  <action name="actionInOutQuint">
+   <property name="text">
+    <string>InOutQuint</string>
+   </property>
+  </action>
+  <action name="actionOutInQuint">
+   <property name="text">
+    <string>OutInQuint</string>
+   </property>
+  </action>
+  <action name="actionOutSine">
+   <property name="text">
+    <string>OutSine</string>
+   </property>
+  </action>
+  <action name="actionInOutSine">
+   <property name="text">
+    <string>InOutSine</string>
+   </property>
+  </action>
+  <action name="actionOutInSine">
+   <property name="text">
+    <string>OutInSine</string>
+   </property>
+  </action>
+  <action name="actionOutExpr">
+   <property name="text">
+    <string>OutExpo</string>
+   </property>
+  </action>
+  <action name="actionInOutExpo">
+   <property name="text">
+    <string>InOutExpo</string>
+   </property>
+  </action>
+  <action name="actionOutInExpo">
+   <property name="text">
+    <string>OutInExpo</string>
+   </property>
+  </action>
+  <action name="actionOutCirc">
+   <property name="text">
+    <string>OutCirc</string>
+   </property>
+  </action>
+  <action name="actionInOutCirc">
+   <property name="text">
+    <string>InOutCirc</string>
+   </property>
+  </action>
+  <action name="actionOutInCirc">
+   <property name="text">
+    <string>OutInCirc</string>
+   </property>
+  </action>
+  <action name="actionOutElastic">
+   <property name="text">
+    <string>OutElastic</string>
+   </property>
+  </action>
+  <action name="actionInOutElastic">
+   <property name="text">
+    <string>InOutElastic</string>
+   </property>
+  </action>
+  <action name="actionOutInElastic">
+   <property name="text">
+    <string>OutInElastic</string>
+   </property>
+  </action>
+  <action name="actionIn">
+   <property name="text">
+    <string>In</string>
+   </property>
+  </action>
+  <action name="actionOut">
+   <property name="text">
+    <string>Out</string>
+   </property>
+  </action>
+  <action name="actionInOut">
+   <property name="text">
+    <string>InOut</string>
+   </property>
+  </action>
+  <action name="actionOutIn">
+   <property name="text">
+    <string>OutIn</string>
+   </property>
+  </action>
+  <action name="actionIn_2">
+   <property name="text">
+    <string>In</string>
+   </property>
+  </action>
+  <action name="actionOut_2">
+   <property name="text">
+    <string>Out</string>
+   </property>
+  </action>
+  <action name="actionInOut_2">
+   <property name="text">
+    <string>InOut</string>
+   </property>
+  </action>
+  <action name="actionOutIN">
+   <property name="text">
+    <string>OutIn</string>
+   </property>
+  </action>
+  <action name="actionIn_3">
+   <property name="text">
+    <string>In</string>
+   </property>
+  </action>
+  <action name="actionOut_3">
+   <property name="text">
+    <string>Out</string>
+   </property>
+  </action>
+  <action name="actionInOut_3">
+   <property name="text">
+    <string>InOut</string>
+   </property>
+  </action>
+  <action name="actionOutIn_2">
+   <property name="text">
+    <string>OutIn</string>
+   </property>
+  </action>
+  <action name="actionIn_4">
+   <property name="text">
+    <string>In</string>
+   </property>
+  </action>
+  <action name="actionOut_4">
+   <property name="text">
+    <string>Out</string>
+   </property>
+  </action>
+  <action name="actionInOut_4">
+   <property name="text">
+    <string>InOut</string>
+   </property>
+  </action>
+  <action name="actionOutIN_2">
+   <property name="text">
+    <string>OutIn</string>
+   </property>
+  </action>
+  <action name="actionIn_5">
+   <property name="text">
+    <string>In</string>
+   </property>
+  </action>
+  <action name="actionOut_5">
+   <property name="text">
+    <string>Out</string>
+   </property>
+  </action>
+  <action name="actionInOut_5">
+   <property name="text">
+    <string>InOut</string>
+   </property>
+  </action>
+  <action name="actionOutIn_3">
+   <property name="text">
+    <string>OutIn</string>
+   </property>
+  </action>
+  <action name="actionIn_6">
+   <property name="text">
+    <string>In</string>
+   </property>
+  </action>
+  <action name="actionOut_6">
+   <property name="text">
+    <string>Out</string>
+   </property>
+  </action>
+  <action name="actionInOut_6">
+   <property name="text">
+    <string>InOut</string>
+   </property>
+  </action>
+  <action name="actionOutIn_4">
+   <property name="text">
+    <string>OutIn</string>
+   </property>
+  </action>
+  <action name="actionIn_7">
+   <property name="text">
+    <string>In</string>
+   </property>
+  </action>
+  <action name="actionOut_7">
+   <property name="text">
+    <string>Out</string>
+   </property>
+  </action>
+  <action name="actionInOut_7">
+   <property name="text">
+    <string>InOut</string>
+   </property>
+  </action>
+  <action name="actionOutIn_5">
+   <property name="text">
+    <string>OutIn</string>
+   </property>
+  </action>
+  <action name="actionIn_8">
+   <property name="text">
+    <string>In</string>
+   </property>
+  </action>
+  <action name="actionOut_8">
+   <property name="text">
+    <string>Out</string>
+   </property>
+  </action>
+  <action name="actionInOut_8">
+   <property name="text">
+    <string>InOut</string>
+   </property>
+  </action>
+  <action name="actionOutIn_6">
+   <property name="text">
+    <string>OutIn</string>
+   </property>
+  </action>
+  <action name="actionIn_9">
+   <property name="text">
+    <string>In</string>
+   </property>
+  </action>
+  <action name="actionOut_9">
+   <property name="text">
+    <string>Out</string>
+   </property>
+  </action>
+  <action name="actionInOut_9">
+   <property name="text">
+    <string>InOut</string>
+   </property>
+  </action>
+  <action name="actionOutIn_7">
+   <property name="text">
+    <string>OutIn</string>
+   </property>
+  </action>
+  <action name="actionIn_10">
+   <property name="text">
+    <string>In</string>
+   </property>
+  </action>
+  <action name="actionOut_10">
+   <property name="text">
+    <string>Out</string>
+   </property>
+  </action>
+  <action name="actionInOut_10">
+   <property name="text">
+    <string>InOut</string>
+   </property>
+  </action>
+  <action name="actionOutIn_8">
+   <property name="text">
+    <string>OutIn</string>
+   </property>
+  </action>
+  <action name="actionsetBackgroundRoundness">
+   <property name="text">
+    <string>setBackgroundRoundness</string>
+   </property>
+  </action>
+  <action name="actiontrue">
+   <property name="text">
+    <string>true</string>
+   </property>
+  </action>
+  <action name="actionfalse">
+   <property name="text">
+    <string>false</string>
+   </property>
+  </action>
+  <action name="actiontrue_2">
+   <property name="text">
+    <string>true</string>
+   </property>
+  </action>
+  <action name="actionfalse_2">
+   <property name="text">
+    <string>false</string>
+   </property>
+  </action>
+  <action name="actionsetMargins">
+   <property name="text">
+    <string>setMargins</string>
+   </property>
+  </action>
+  <action name="actionPlotArea">
+   <property name="text">
+    <string>setPlotArea</string>
+   </property>
+  </action>
+  <action name="actionsetPlotAreaBackgroundVisible">
+   <property name="text">
+    <string>setPlotAreaBackgroundVisible</string>
+   </property>
+  </action>
+  <action name="actionLight">
+   <property name="text">
+    <string>Light</string>
+   </property>
+  </action>
+  <action name="actionBlueCerulean">
+   <property name="text">
+    <string>BlueCerulean</string>
+   </property>
+  </action>
+  <action name="actionDark">
+   <property name="text">
+    <string>Dark</string>
+   </property>
+  </action>
+  <action name="actionBrownSand">
+   <property name="text">
+    <string>BrownSand</string>
+   </property>
+  </action>
+  <action name="actionBlueNcs">
+   <property name="text">
+    <string>BlueNcs</string>
+   </property>
+  </action>
+  <action name="actionHighContrast">
+   <property name="text">
+    <string>HighContrast</string>
+   </property>
+  </action>
+  <action name="actionBlueIcy">
+   <property name="text">
+    <string>BlueIcy</string>
+   </property>
+  </action>
+  <action name="actionQt">
+   <property name="text">
+    <string>Qt</string>
+   </property>
+  </action>
+  <action name="actionUndefined">
+   <property name="text">
+    <string>Undefined</string>
+   </property>
+  </action>
+  <action name="actionCartesian">
+   <property name="text">
+    <string>Cartesian</string>
+   </property>
+  </action>
+  <action name="actionPolar">
+   <property name="text">
+    <string>Polar</string>
+   </property>
+  </action>
+  <action name="actionsetTitle">
+   <property name="text">
+    <string>setTitle</string>
+   </property>
+  </action>
+  <action name="actiont">
+   <property name="text">
+    <string>add</string>
+   </property>
+  </action>
+  <action name="actiondelete">
+   <property name="text">
+    <string>delete</string>
+   </property>
+  </action>
+  <action name="actionLeft">
+   <property name="text">
+    <string>Left</string>
+   </property>
+  </action>
+  <action name="actionTop">
+   <property name="text">
+    <string>Top</string>
+   </property>
+  </action>
+  <action name="actionRight">
+   <property name="text">
+    <string>Right</string>
+   </property>
+  </action>
+  <action name="actionBottom">
+   <property name="text">
+    <string>Bottom</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="MainWindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/icon.svg</file>
+        <file>Resources/about_hover.png</file>
+        <file>Resources/about_normal.png</file>
+        <file>Resources/close_hover.png</file>
+        <file>Resources/close_normal.png</file>
+        <file>Resources/max_hover.png</file>
+        <file>Resources/max_normal.png</file>
+        <file>Resources/maxd_hover.png</file>
+        <file>Resources/maxd_normal.png</file>
+        <file>Resources/min_hover.png</file>
+        <file>Resources/min_normal.png</file>
+        <file>Resources/settings_hover.png</file>
+        <file>Resources/settings_normal.png</file>
+        <file>Resources/icon.png</file>
+        <file>Resources/CopyRight.png</file>
+        <file>Resources/NetSite_Default.png</file>
+        <file>Resources/Icon_Dialog_Beijing.png</file>
+    </qresource>
+</RCC>
