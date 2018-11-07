@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1109</width>
+    <width>551</width>
     <height>839</height>
    </rect>
   </property>
@@ -14,150 +14,667 @@
    <string>QChartDemo</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QGroupBox" name="groupBox_Animations">
-      <property name="title">
-       <string>AnimationOption</string>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>60</y>
+      <width>468</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>AxisCommonProperty</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_19">
+       <property name="text">
+        <string>TitleText</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>Range</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit_7"/>
+     </item>
+     <item row="6" column="1">
+      <widget class="QComboBox" name="comboBox_2">
        <item>
-        <widget class="QRadioButton" name="radioButton_NoAnimation">
-         <property name="text">
-          <string>NoAnimation</string>
-         </property>
-        </widget>
+        <property name="text">
+         <string>true</string>
+        </property>
        </item>
        <item>
-        <widget class="QRadioButton" name="radioButton_GridAxisAnimations">
-         <property name="text">
-          <string>GridAxisAnimations</string>
-         </property>
-        </widget>
+        <property name="text">
+         <string>false</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>LabelsColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QComboBox" name="comboBox_3">
+       <item>
+        <property name="text">
+         <string>true</string>
+        </property>
        </item>
        <item>
-        <widget class="QRadioButton" name="radioButton_SeriesAnimations">
-         <property name="text">
-          <string>SeriesAnimations</string>
-         </property>
-        </widget>
+        <property name="text">
+         <string>false</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>LineVisible</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>LabelsFont</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEdit_2"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>GridLineColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>LabelsVisible</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>LabelsAngle</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>LinePenColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_4"/>
        </item>
        <item>
-        <widget class="QRadioButton" name="radioButton_AllAnimations">
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
          <property name="text">
-          <string>AllAnimations</string>
+          <string>PushButton</string>
          </property>
         </widget>
        </item>
       </layout>
-     </widget>
-    </item>
-    <item row="0" column="1" rowspan="3">
-     <widget class="QWidget" name="widget" native="true"/>
-    </item>
-    <item row="1" column="0">
-     <widget class="QGroupBox" name="groupBox_ChartTheme">
-      <property name="title">
-       <string>ChartTheme</string>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
+     </item>
+     <item row="4" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QRadioButton" name="radioButton_Light">
-         <property name="text">
-          <string>Light</string>
-         </property>
-        </widget>
+        <widget class="QLineEdit" name="lineEdit_3"/>
        </item>
        <item>
-        <widget class="QRadioButton" name="radioButton_BlueCerulean">
-         <property name="text">
-          <string>BlueCerulean</string>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
          </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioButton_Dark">
-         <property name="text">
-          <string>Dark</string>
+         <property name="minimumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
          </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioButton_BrownSand">
-         <property name="text">
-          <string>BrownSand</string>
+         <property name="maximumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
          </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioButton_BlueNcs">
          <property name="text">
-          <string>BlueNcs</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioButton_HighContrast">
-         <property name="text">
-          <string>HighContrast</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioButton_BlueIcy">
-         <property name="text">
-          <string>BlueIcy</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioButton_Qt">
-         <property name="text">
-          <string>Qt</string>
+          <string>PushButton</string>
          </property>
         </widget>
        </item>
       </layout>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QGroupBox" name="groupBox_ChartType">
-      <property name="title">
-       <string>ChartType</string>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
+     </item>
+     <item row="11" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
        <item>
-        <widget class="QRadioButton" name="radioButton_Undefined">
+        <widget class="QLabel" name="label_14">
          <property name="text">
-          <string>Undefined</string>
+          <string>Min</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QRadioButton" name="radioButton_Cartesian">
+        <widget class="QLineEdit" name="lineEdit_9"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_15">
          <property name="text">
-          <string>Cartesian</string>
+          <string>Max</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QRadioButton" name="radioButton_Polar">
+        <widget class="QLineEdit" name="lineEdit_10"/>
+       </item>
+      </layout>
+     </item>
+     <item row="7" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_5"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
          <property name="text">
-          <string>Polar</string>
+          <string>PushButton</string>
          </property>
         </widget>
        </item>
       </layout>
-     </widget>
+     </item>
+     <item row="0" column="3">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string>TitleFont</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_13"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_9">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_20">
+       <property name="text">
+        <string>TitleVisible</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="comboBox_7">
+       <item>
+        <property name="text">
+         <string>true</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>false</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>GridLineVisible</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QComboBox" name="comboBox">
+       <item>
+        <property name="text">
+         <string>true</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>false</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>MinorGridLineColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_8"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>MinorGridLineVisible</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QComboBox" name="comboBox_4">
+       <item>
+        <property name="text">
+         <string>true</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>false</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>ShadesBorderColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_11"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>ShadesColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_12"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>ShadesVisible</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="QComboBox" name="comboBox_6">
+       <item>
+        <property name="text">
+         <string>true</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>false</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLabel" name="label_21">
+       <property name="text">
+        <string>Visible</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QComboBox" name="comboBox_8">
+       <item>
+        <property name="text">
+         <string>true</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>false</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>Reverse</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="QComboBox" name="comboBox_5">
+       <item>
+        <property name="text">
+         <string>true</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>false</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_8">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>520</y>
+      <width>427</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_15">
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_24">
+       <item>
+        <property name="text">
+         <string>Horizontal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vertical</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_NewChart_2">
+       <property name="text">
+        <string>New</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_RemoveChart_2">
+       <property name="text">
+        <string>Remove</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QComboBox" name="comboBox_BarCategoryAxis_Alignment_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>590</y>
+      <width>86</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>AlignLeft</string>
+     </property>
     </item>
-   </layout>
+    <item>
+     <property name="text">
+      <string>AlignRight</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AlignHCenter</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AlignJustify</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AlignTop</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AlignBottom</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AlignVCenter</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AlignBaseLine</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AlignCenter</string>
+     </property>
+    </item>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1109</width>
+     <width>551</width>
      <height>23</height>
     </rect>
    </property>
@@ -177,7 +694,7 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="QChartDemo.qrc"/>
+  <include location="MainWindow.qrc"/>
  </resources>
  <connections/>
 </ui>

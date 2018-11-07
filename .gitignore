@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+bin/
+include/
+src/.vs/
+src/MainWindow/Debug
+src/MainWindow/GeneratedFiles
+src/MainWindow/x64
