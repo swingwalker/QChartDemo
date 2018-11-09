@@ -37,7 +37,7 @@ MainWindow::MainWindow(QWidget *parent)
 	_timer = new QTimer(this);
 	connect(_timer, SIGNAL(timeout()), this, SLOT(addPointToChart()));
 
-	connect(ui.pushButton_Start, SIGNAL(clicked()), this, SLOT(startPlay()));
+	//connect(ui.pushButton_Start, SIGNAL(clicked()), this, SLOT(startPlay()));
 }
 
 MainWindow::~MainWindow()
@@ -147,13 +147,13 @@ void MainWindow::addPointToChart()
 
 void MainWindow::startPlay()
 {
-	int iTimeSpan = ui.lineEdit_TimeSpan->text().toInt();
-	if (_timer->isActive())
-	{
-		_timer->stop();
-	}
-	else
-	{
-		_timer->start(iTimeSpan);
-	}
+	//int iTimeSpan = ui.lineEdit_TimeSpan->text().toInt();
+	//if (_timer->isActive())
+	//{
+	//	_timer->stop();
+	//}
+	//else
+	//{
+	//	_timer->start(iTimeSpan);
+	//}
 }
